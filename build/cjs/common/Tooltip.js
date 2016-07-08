@@ -38,10 +38,15 @@ module.exports = React.createClass({
     };
     return React.createElement(
       'div',
-      { style: containerStyles },
+      {
+        style: containerStyles
+      },
       React.createElement(
         'div',
-        { style: tooltipStyles },
+        {
+          className: 'rd3-tooltip',
+          style: tooltipStyles
+        },
         props.child
       )
     );
